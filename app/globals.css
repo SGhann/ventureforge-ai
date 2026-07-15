@@ -1,0 +1,115 @@
+:root {
+  --bg: #0a0e17;
+  --card: #111827;
+  --hover: #1a2234;
+  --input: #0d1321;
+  --border: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --dim: #64748b;
+  --accent: #3b82f6;
+  --green: #10b981;
+  --amber: #f59e0b;
+  --red: #ef4444;
+  --purple: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* Markdown output from agents. */
+.prose {
+  font-size: 14px;
+  line-height: 1.65;
+}
+.prose h3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 14px 0 4px;
+}
+.prose p {
+  margin: 6px 0;
+}
+.prose ul,
+.prose ol {
+  margin: 6px 0 6px 18px;
+}
+.prose li {
+  margin: 3px 0;
+}
+.prose strong {
+  color: #fff;
+  font-weight: 700;
+}
+.prose code {
+  background: var(--bg);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  color: var(--accent);
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin: 10px 0;
+}
+.prose th {
+  padding: 7px 10px;
+  background: var(--bg);
+  text-align: left;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 11px;
+  border-bottom: 1px solid var(--border);
+}
+.prose td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+}
+/* Wide tables scroll inside their own container rather than the page. */
+.prose .table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 10px 0;
+}
